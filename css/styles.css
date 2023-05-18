@@ -198,6 +198,8 @@ body {
     color: #000000;
 }
 
+.image-container {}
+
 .steps-image {
     position: absolute;
     width: 335px;
