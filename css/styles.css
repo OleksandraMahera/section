@@ -44,35 +44,43 @@ body {
 
 
 
-.section {
+.steps {
     padding-top: 80px;
     padding-bottom: 80px;
 }
 
+.steps-container {
+
+}
+
 .steps-title {
-    
+    display: block;
+    max-width: 335px;
+    height: auto;
     margin-bottom: 14px;
+
     font-weight: 500;
     font-size: 28px;
-    font-style: medium;
-
-    line-height: 28px;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    
     text-align: center;
-    letter-spacing: -4%;
-    text-transform: capitalize;
+    text-transform: uppercase;
     color: #FFFFFF;
 }
 
 .steps-description {
-    
+    display: block;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
+
+    margin-bottom: 44px;
     max-width: 335px;
     font-size: 14px;
-    font-style: normal;
 
-    line-height: 18px;
-    letter-spacing: -4%;
+    line-height: 1.29;
+    letter-spacing: -0.04em;
     color: #FFFFFF;
 }
 
@@ -85,33 +93,36 @@ body {
 }
 
 .steps-list {
-    display: flex;
-    flex-wrap: wrap;
-
-    margin-bottom: 0;
-    gap: 20px;
+    display: block;
+    margin-bottom: 44px;
 }
 
 .steps-item {
     display: flex;
-    justify-content: center;
     align-items: center;
+    padding: 20px;
 
-    width: 335px;
+    
+    width: 100%;
     height: 112px;
     margin-bottom: 20px;
 
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     border-radius: 20px;
 }
 
-.how-it-works {}
-
-.container {}
-
-.list {}
+.steps-item:not(:last-child) {
+    margin-bottom: 20px;
+}
 
 .oval-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px 31.5px;
+    margin-right: 14px;
+
     width: 136px;
     height: 48px;
 
@@ -124,18 +135,32 @@ body {
 }
 
 .oval-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 12px 31.5px;
+    margin-right: 14px;
+    
     width: 136px;
     height: 48px;
-
+    
     margin-top: 32px;
     margin-bottom: 32px;
     margin-left: 20px;
-
+    
     border-radius: 200px;
     background-color: #A1C864;
 }
 
 .oval-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 12px 31.5px;
+    margin-right: 14px;
+    
     width: 136px;
     height: 48px;
     
@@ -154,23 +179,28 @@ body {
     
     line-height: 24px;
     text-align: center;
-    letter-spacing: -4%;
+    letter-spacing: -0.04em;
 
     color: #FFFFFF;
 }
 
 .instruction {
+    max-width: 145px;
+    text-align: start;
+
     font-weight: 400;
     font-size: 14px;
     font-style: normal;
     
     line-height: 18px;
-    text-align: center;
-    letter-spacing: -4%;
+    letter-spacing: -0.04em;
     
     color: #000000;
 }
 
-.gif {
+.steps-image {
+    position: absolute;
+    width: 335px;
+    height: 476px;
     border-radius: 20px;
 }
