@@ -70,7 +70,6 @@ body {
 /* SECTION */
 
 .section-steps {
-    padding-top: 80px;
     padding-bottom: 80px;
 }
 
@@ -79,7 +78,6 @@ body {
         display: flex;
         justify-content: center;
 
-        padding-top: 137px;
         padding-left: 72px;
         padding-right: 72px;
     }
@@ -87,7 +85,6 @@ body {
 
 @media screen and (min-width: 1280px) {
     .sectio-steps {
-        padding-top: 150px;
         padding-left: 32px;
         padding-right: 33px;
     }
@@ -100,6 +97,10 @@ body {
     max-width: 335px;
     height: auto;
     margin-bottom: 14px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
 
     font-size: 28px;
     line-height: 1;
@@ -131,6 +132,10 @@ body {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
 
     margin-bottom: 44px;
     max-width: 335px;
@@ -171,12 +176,31 @@ body {
 }
 
 
-
+/* LIST */
 .steps-list {
     display: block;
     margin-bottom: 44px;
 }
 
+@media screen and (min-width: 768px) {
+    .steps-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .steps-list {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+}
+
+
+
+/* ITEM */
 .steps-item {
     display: flex;
     align-items: center;
@@ -197,11 +221,22 @@ body {
 @media screen and (min-width: 768px) {
     .steps-item {
         width: 389px;
+        height: 128px;
         margin-left: 117.5px;
         margin-right: 117.5px;
-        margin-bottom: 80px;
+        margin-bottom: 0;
     }
 }
+
+@media screen and (min-width: 1280px) {
+    .steps-item {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+}
+
+
 
 .oval {
     display: flex;
@@ -257,10 +292,9 @@ body {
     color: #000000;
 }
 
-.image-container {}
 
+/* IMAGE */
 .steps-image {
-    position: absolute;
     width: 335px;
     height: 476px;
     border-radius: 20px;
@@ -275,5 +309,8 @@ body {
 @media screen and (min-width: 1280px) {
     .steps-image {
         width: 860px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
+
